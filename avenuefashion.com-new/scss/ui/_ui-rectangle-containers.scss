@@ -1,0 +1,25 @@
+@import "../vars/index";
+
+@mixin uiBox($color,$displayValue,$padding) {
+    display: $displayValue;
+    background-color: $color;
+    padding: $padding;
+    margin: 0 auto;
+    width: 35rem;
+
+}
+
+
+
+
+.content-blocks{
+    @include uiBox($darkBlack,block,3rem);
+    img{
+        width: 1rem;
+    }
+    
+}
+
+.content-social{
+    @include uiBox($aqua,flex,3rem);
+}
