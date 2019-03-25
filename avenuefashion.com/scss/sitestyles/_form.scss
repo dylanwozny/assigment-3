@@ -1,0 +1,139 @@
+
+// Grid in firefox !!!!
+// 1.set deafults
+// 2. setup layout
+// 3. do spacing
+.avenue-client-reg{
+
+    margin: 1rem;
+
+
+    input, select{
+        background: white;
+        border: 1px solid grey;
+        width: 100%;
+        line-height: 1.5;
+        padding: 0.25rem 0.5rem;
+        font-family: "montserrat";
+        font-size: 1.25rem;
+        color: #999;
+    }
+
+    label{
+        color: grey;
+        font-size: 1rem;
+        font-family: "montserrat";
+
+
+    }
+
+
+}
+
+
+@media(min-width:780px){
+
+
+    .avenue-client-reg{
+        display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 0.5rem;
+
+        // template areas 
+        grid-template-areas: 
+        "firstname lastname"
+        "email email"
+        "password confirm"
+        "frequency phone"
+        "terms terms"
+        "message massage";
+    }
+
+
+    .first-name{
+        grid-area: firstname;
+    
+    }
+    .last-name{
+        grid-area: lastname;
+    
+    }
+    .email{
+        grid-area: email;
+    
+    }
+    .password{
+        grid-area: password;
+    
+    }
+
+    .confrim-password{
+        grid-area: confirm;
+    }
+
+    .email-frequency{
+        grid-area: frequency;
+    }
+
+    .phone-number{
+        grid-area: phone;
+    }
+
+    .fine-print{
+        grid-area: terms;
+        
+    }
+
+        // percisely select a grid cell with nth child
+        // div:nth-child(1){
+        // tell it to span 2 columns in width
+        // span mean to start counting from the element its in
+        // grid-column: span 2;
+        // 1/3 means span from 1 to 3 !
+        // grid-column: 1/3;
+        // grid-row: 1/3;
+        // background: tomato;
+        // says to go between 3rd and 4th cell
+        // grid-column: 3/4;
+        // grid-area: head;
+        
+        
+    
+
+    // :nth-child(2){
+        // background: teal;
+        // grid-area: main;
+    
+    // :nth-child(3){
+        // background: chocolate;
+        // grid-area: sidebar;
+        
+    
+
+    // :nth-child(4){
+        // background: crimson;
+        // grid-area: footer;
+        // grid-column: 1/2;
+        // grid-row: 1/3;
+    
+
+
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
